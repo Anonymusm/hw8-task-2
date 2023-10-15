@@ -1,0 +1,44 @@
+:root {
+  --hover-color: blue;
+  --focus-color: orange;
+  --checked-color: brown;
+  --main-color: burlywood;
+  --text-color: red;
+  --bg-first-section: hotpink;
+}
+
+.item-title-container:hover {
+  color: var(--hover-color);
+}
+
+.mean-title:focus {
+  background-color: var(--focus-color);
+}
+
+.item-lesson-container:checked {
+  background-color: var(--checked-color);
+}
+
+.item-container:not([class="item-monday-lesson-container"]) {
+  background-color: var(--bg-first-section);
+}
+
+:nth-child(even) {
+  color: var(--text-color);
+}
+
+:nth-child(odd) {
+  color: var(--main-color);
+}
+
+.item-tuesday-container:first-child {
+  font-size: 40px;
+}
+
+.item-wednesday-container:last-child {
+  font-style: italic;
+}
+
+.item-wednesday-container:nth-child(3) {
+  font-size: 19px;
+}
